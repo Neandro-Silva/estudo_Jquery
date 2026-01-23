@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--<script src="jquery-3.7.1.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+      $(document).ready(() => {
+        //inserir no final
+        //$('#lista1').append('<li>Item 4</li>')
+        //inserir no inicio
+        $('#lista1').prepend('<li>Item 4</li>')
+        
+        //inserir no final
+        //$('#lista2').append('<div>Intem 4</>')
+
+             //inserir fora no final
+       // $('#lista2').after('<p>Item novo</p>')
+
+              //inserir fora no inico
+        //$('#lista2').before('<p>Item novo</p>')
+
+        $('#linha').after('<p>Item novo</p>')
+
+        //remover
+        $('#lista1').remove()
+      })
+
+    </script>
+</head>
+<body>
+ 
+   <ul id="lista1">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+   </ul>
+
+   <div id="lista2">
+     <div>Item 1</div>
+      <div>Item 2</div>
+       <div>Item 3</div>
+   </div>
+   <hr id="linha">
+</html>
